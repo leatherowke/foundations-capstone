@@ -1,0 +1,16 @@
+body {
+    background-color: gray;
+    margin: 0px;
+}
+
+.data-entry-header { 
+    width: 100% vw;
+    text-align: center;
+    background-color: blue;
+    margin: 0px;
+    padding: 40px;
+}
+
+.data-entry {
+    margin: 5px;
+}
