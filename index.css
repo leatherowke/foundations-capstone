@@ -3,14 +3,42 @@ body {
     margin: 0px;
 }
 
-.data-entry-header { 
+header { 
     width: 100% vw;
     text-align: center;
-    background-color: blue;
+    background-color: #0D2C54;
     margin: 0px;
     padding: 40px;
+    display: flex;
+}
+.logo {
+    height: 100px;
+    width: 125px;
+    border-radius: 10px;
+    margin-right: 500px;
 }
 
-.data-entry {
-    margin: 5px;
+.data-entry-1 {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.data-entry-2 {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-evenly;
+}
+
+#submit {
+margin-left: 80vw;
+margin-top: 50px;
 }

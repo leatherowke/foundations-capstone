@@ -4,38 +4,52 @@
         <link href="index.css" rel="stylesheet">
     </head>
     <body>
+        <header> 
+            <img class="logo" src="niagara logo.png">
         <h1 class="data-entry-header">RO DATA ENTRIES</h1>
-        <section class="data-entry">
-            <div class="input-point">
-                <input type="date">
+        </header>
+        <section class="data-entry-1">
+            <div class="input-point" id="ro"> 
+                <select name="ro-selection">
+                    <option value="" disabled selected hidden>Select RO</option>
+                    <option value="RO1">RO-1</option>
+                    <option value="RO2">RO-2</option>
+                </select>
+                <p>RO selection</p>
             </div>
-                <div class="input-point">
-                    <input type="text" placeholder="name">
-                    <p>tech</p>
+            <div class="input-point" id="date">
+                <input type="date">
+                <p>readings date</p>
+            </div>
+            <div class="input-point" id="name">
+                <input type="text" placeholder="name">
+                <p>tech</p>
                 </div>
-                <div class="input-point">
-                    <input class="input-point" type="text" title="inlet water temp." placeholder="inlet water temp.">
+                <div class="input-point" id="inlet-temp">
+                    <input class="input-point" type="text" title="inlet water temp." placeholder="&#176f">
                     <p>inlet water temp.</p>
                 </div>
-                <div class="input-point">
-                    <input type="text" title="inlet water temp." placeholder="inlet water flow.">
+            </section>
+            <section class="data-entry-2">
+                <div class="input-point" id="inlet-flow">
+                    <input type="text" title="inlet water temp." placeholder="gpm">
                     <p>inlet water flow</p>
                 </div>
-                <div class="input-point">
-                    <input type="text" title="inlet water temp." placeholder="inlet water pressure.">
+                <div class="input-point" id="inlet-psi">
+                    <input type="text" title="inlet water temp." placeholder="psi">
                     <p>inlet water pressure</p>
                 </div>
-                <div class="input-point">
-                    <input type="text" title="inlet water temp." placeholder="outlet water pressure">
+                <div class="input-point" id="outlet-psi" >
+                    <input type="text" title="inlet water temp." placeholder="psi">
                     <p>outlet water pressure</p>
                 </div>
                 <div class="input-point">
-                    <input type="text" title="inlet water temp." placeholder="outlet water temp.">
-                    <p>outlet water flow</p>
+                    <input type="text" title="inlet water temp." placeholder="gpm">
+                    <p>outlet concentrate water flow</p>
                 </div>
             </div>
-            <button id="submit">submit</button>
         </section>
+        <button id="submit">submit</button>
 
      </body>
     <script src="index.js"></script>
