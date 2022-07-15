@@ -8,15 +8,27 @@ header {
     text-align: center;
     background-color: #0D2C54;
     margin: 0px;
-    padding: 40px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
 }
+h1 {
+    margin-right: 250px;
+}
+
+
 .logo {
     height: 100px;
     width: 125px;
     border-radius: 10px;
     margin-right: 500px;
 }
+
+.search {
+    height: 20px;
+}
+
 
 .data-entry-1 {
     display: flex;
