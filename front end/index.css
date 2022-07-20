@@ -54,3 +54,20 @@ h1 {
 margin-left: 80vw;
 margin-top: 50px;
 }
+
+#entries-info {
+    margin: 100px;
+    display: flexbox;
+    border: 10px black;
+}
+
+.entries-data {
+    display: flexbox;
+    justify-content: center;
+    border: 2px black;
+}
+
+h4 {
+justify-content: center;
+border: 2px black;
+}
