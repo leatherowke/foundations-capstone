@@ -40,7 +40,7 @@ let body = {
     };
 //  console.log(body)
 
- axios.post('http://localhost:4000/entry',body)
+ axios.post('/entry',body)
 .then(()=>{
     // console.log('entry added')
     alert('entry added')
@@ -53,7 +53,7 @@ let body = {
 searchBtn.addEventListener('click', () =>{
     let body = {searchDate: searchDate.value};
     // console.log(body)
-    axios.post(`http://localhost:4000/entries`,body)
+    axios.post(`/entries`,body)
     .then(res =>{
         res.data.forEach(elem =>{
             const entriesData = document.createElement('div')
@@ -84,7 +84,7 @@ searchBtn.addEventListener('click', () =>{
 
 function deleteEntry(id){
     console.log('delete button pushed')
-    axios.delete(`http://localhost:4000/entries/${id}`)
+    axios.delete(`/entries/${id}`)
     .then(() => {
         alert('entry deleted')
         window.location.reload();
